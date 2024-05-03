@@ -59,7 +59,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="8dp"
-                android:src="@tools:sample/avatars"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/starText"
                 app:srcCompat="@drawable/star" />
@@ -91,12 +90,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:src="@tools:sample/avatars"
-                android:tint="@color/red"
                 app:layout_constraintBottom_toBottomOf="@+id/timetxt"
                 app:layout_constraintStart_toEndOf="@+id/timetxt"
                 app:layout_constraintTop_toTopOf="@+id/timetxt"
-                app:srcCompat="@drawable/time" />
+                app:srcCompat="@drawable/time"
+                app:tint="@color/red" />
 
             <TextView
                 android:id="@+id/pricetxt"

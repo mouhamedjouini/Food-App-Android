@@ -3,17 +3,19 @@ package com.example.projectandroid.Domain;
 public class Foods {
       private int CategoryId;
       private String Description;
-     private Boolean BestFood;
+     private boolean BestFood;
      private int Id;
-    private String LocationId;
+    private int LocationId;
     private double Price;
     private String ImagePath;
     private int PriceId;
     private double Star;
     private int TimeId;
-    private int numberInCart;
     private int TimeValue;
     private String Title;
+    private int numberInCart;
+
+
 
     public Foods() {
     }
@@ -39,7 +41,7 @@ public class Foods {
         Description = description;
     }
 
-    public Boolean getBestFood() {
+    public boolean getBestFood() {
         return BestFood;
     }
 
@@ -55,11 +57,11 @@ public class Foods {
         Id = id;
     }
 
-    public String getLocationId() {
+    public int getLocationId() {
         return LocationId;
     }
 
-    public void setLocationId(String locationId) {
+    public void setLocationId(int locationId) {
         LocationId = locationId;
     }
 
