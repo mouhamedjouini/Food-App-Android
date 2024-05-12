@@ -51,7 +51,19 @@ private ActivityMainBinding binding;
             FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(MainActivity.this,LoginActivity.class));
         });
+        binding.searchEdt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              String text = binding.searchEdt.getText().toString();
+              if(!text.isEmpty()){
+                  Intent intent = new Intent(MainActivity.this , ListFoodsActivity.class);
+                  intent.putExtra("text",text);
+                  intent.putExtra("isSearch", true);
+                  startActivity(intent);
 
+              }
+            }
+        });
     }
 
     private void initBestFood() {
